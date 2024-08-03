@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int contador = 0;
+
         while (true) {
             System.out.print("Ingresa tu nombre: ");
             String nombre = scanner.nextLine();
@@ -18,6 +20,9 @@ public class Main {
             } else {
                 System.out.println("Buenas noches, " + nombre);
             }
+
+            contador++;
+            System.out.println("Saludos realizados: " + contador);
 
             System.out.print("¿Deseas saludar a alguien más? (sí/no): ");
             String respuesta = scanner.nextLine();
