@@ -1,9 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hola mundo");
-
-
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingresa tu nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.println("Hola, " + nombre);
     }
+}
